@@ -58,10 +58,10 @@ else:
 
 #Qua inserisci i selettori
 
-indice = ['Rendimento% a 3 mesi','Rendimento% a 6 mesi','Volatilità% a 6 mesi','Max Drawdown']
+indice = ['Rendimento% a 3 mesi','Rendimento% a 6 mesi', 'Rendimento% a 12 mesi', 'Rendimento% a 3 anni', 'Rendimento% a 5 anni', 'Volatilità% a 6 mesi', 'Volatilità% a 12 mesi', 'Volatilità% a 3 anni', 'Volatilità% a 5 anni','Max Drawdown']
 indice2 = ['Asset Class', 'Rischio', 'Orizzonte', 'Classificazione', 'Listino']
 
-assex = st.sidebar.selectbox('scegli asse x',indice, index=2)
+assex = st.sidebar.selectbox('scegli asse x',indice, index=5)
 
 assey = st.sidebar.selectbox('scegli asse y',indice, index=1)
 
