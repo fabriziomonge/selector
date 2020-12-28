@@ -21,7 +21,7 @@ st.sidebar.markdown('''### Seleziona i parametri del tuo grafico ''')
 
 try:
 
-    tabella = pd.read_excel(r'C:\Users\user\Downloads\App_sim\Tabella_completa.xlsx')
+    tabella = pd.read_excel('http://www.sphereresearch.net/Sim/tabella_completa.xlsx')
     
 except:
     
