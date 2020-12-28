@@ -19,13 +19,15 @@ st.sidebar.image(image, use_column_width=True)
 
 st.sidebar.markdown('''### Seleziona i parametri del tuo grafico ''')
 
+
+
 try:
 
-    tabella = pd.read_excel('http://www.sphereresearch.net/Sim/tabella_completa.xlsx')
+    tabella = tabella
     
 except:
     
-    tabella = pd.read_excel('tabella_completa.xlsx')
+    tabella = pd.read_excel('http://www.sphereresearch.net/Sim/tabella_completa.xlsx')
     
     
 tabella = tabella.set_index('Unnamed: 0',1)
@@ -36,7 +38,7 @@ st.title('Selettore Fondi Quantitativo')
 
 asset_sel = ['ALL']+list(tabella['Asset Class'].unique())
 
-Filtro = st.multiselect('Asset selezionata', asset_sel)
+Filtro = st.multiselect('Asset selezionata', asset_sel, default=['ALL'])
 # valore= 'Breve Medio Periodo'
 
 Filtro = list(Filtro)
